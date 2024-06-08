@@ -10,6 +10,8 @@ my_slider = st.sidebar.slider('Temperatura en Celsius')
 st.sidebar.write(f'Temperatura a Fahrenheit: {my_slider * 1.8 + 32}')
 
 def miles_to_km():
+	if "miles" not in st.session_state:
+		st.session_state.miles = 0  # Inicializa 'miles' con un valor predeterminado
 	st.session_state.km = st.session_state.miles * 1.609
 
 def km_to_miles():

@@ -17,13 +17,13 @@ d1 = dict(zip(l1, l2))
 st.write(d1)
 
 # using magic
-'Mostrando usando magica :sonrisa'
+'Mostrando usando magica :smile:'
 
 df = pd.DataFrame({
     '1_columna': [1, 2, 3, 4],
     '2_columna': [10, 20, 30, 40]
 })
 
-df # st.write(df)
+# st.write(df)
 
 # Run it: streamlit run .\file.py
